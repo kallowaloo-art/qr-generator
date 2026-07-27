@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signal QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Signal QR Code Generator</h1>
+    <p>Generate a QR code for your Signal contact information</p>
+    
+    <div class="input-group">
+      <input type="text" id="phoneNumber" placeholder="Enter phone number (e.g., +1234567890)">
+    </div>
+    
+    <button onclick="generateQR()">Generate QR Code</button>
+    
+    <div id="qrcode"></div>
+    
+    <div style="margin-top: 30px; font-size: 12px; color: #999;">
+      <a href="privacy.html" style="color: #667eea; text-decoration: none;">Privacy Policy</a> | 
+      <a href="terms.html" style="color: #667eea; text-decoration: none;">Terms of Service</a>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
