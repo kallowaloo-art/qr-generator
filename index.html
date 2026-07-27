@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Signal QR Generator</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Signal QR Generator</h1>
+    <p>Enter a phone number (with country code) and click Generate to create a Signal link QR code.</p>
+
+    <label for="signal">Signal phone (include +countrycode)</label>
+    <input id="signal" placeholder="+1234567890" />
+
+    <div class="controls">
+      <button id="generate">Generate</button>
+      <a id="download" download="signal-qr.png" style="display:none">Download PNG</a>
+    </div>
+
+    <div id="qrcode" class="qrcode"></div>
+
+    <small class="hint">Example link: https://signal.me/#p/+1234567890</small>
+
+    <nav class="links">
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+    </nav>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
